@@ -1,0 +1,9 @@
+.reveal section img.no-border {
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+
+body .reveal .controls {
+    color: #ea5906;
+}
