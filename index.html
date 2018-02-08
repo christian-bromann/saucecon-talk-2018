@@ -26,12 +26,52 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<img src="/images/webdriverio.svg" class="no-border" width="300">
-					<h3 style="position: relative; bottom: 100px;">BUILDING SCALABLE AND STABLE E2E TEST SUITES WITH WEBDRIVERIO</h3>
+					<img src="/images/webdriverio.svg" class="no-border" width="600">
+					<h2 style="position: relative; bottom: 100px;">BUILDING SCALABLE AND STABLE E2E TEST SUITES WITH WEBDRIVERIO</h2>
 				</section>
-				<section>
-					<subsection>foo</subsection>
-					<subsection>foobar</subsection>
+				<section data-background="#fff">
+					<div class="fragment titleSlide easeIn intro">
+						<h1 style="margin-bottom: 0;">Christian Bromann</h1>
+						<h4 style="font-weight: normal; position: relative; bottom: 10px; left: 10px; color: #777;">Software Engineer</h4>
+					</div>
+                    <div class="fragment" style="margin-top: 100px;">
+                        <div style="text-align: left; margin-left: 205px"><img src="/images/saucelabs.png" alt="Sauce Labs" style="border:0; box-shadow: none; width: 280px;"></div>
+                        <div style="text-align: left; margin-left: 205px; padding-left: 50px; background: url(/images/twitter.png) 0 no-repeat; background-size: 45px;"><a style="color: #555" href="https://twitter.com/bromann">@bromann</a></div>
+                        <div style="text-align: left; margin-left: 205px; padding-left: 51px; background: url(/images/octocat.png) -5px 6px no-repeat; background-size: 50px; margin-top: 20px;"><a style="color: #555" href="https://github.com/christian-bromann">christian-bromann</a></div>
+                    </div>
+				</section>
+				<section class="about">
+					<div class="fragment fade-up current-visible"><b>About:</b> WebdriverIO</div>
+					<div class="fragment"></div>
+					<div class="fragment fade-up current-visible"><b>Not About:</b> Selenium</div>
+					<div class="fragment"></div>
+					
+					<div class="fragment fade-up current-visible"><b>About:</b> Automation Technology</div>
+					<div class="fragment"></div>
+					<div class="fragment fade-up current-visible"><b>Not About:</b> High Level Overview</div>
+					<div class="fragment"></div>
+					
+					<div class="fragment fade-up current-visible"><b>About:</b> Blackbox Testing</div>
+					<div class="fragment"></div>
+					<div class="fragment fade-up current-visible"><b>Not About:</b> Whitebox Testing</div>
+					<div class="fragment"></div>
+					
+					<div class="fragment fade-up current-visible"><b>About:</b> JavaScript</div>
+					<div class="fragment"></div>
+					<div class="fragment fade-up current-visible"><b>Not About:</b> Java</div>
+					<div class="fragment"></div>
+					
+					<div class="fragment fade-up current-visible"><b>About:</b> Showing off WebdriverIO</div>
+					<div class="fragment"></div>
+					<div class="fragment fade-up current-visible"><b>Not About:</b> Selling you a framework</div>
+					<div class="fragment"></div>
+				</section>
+                <section
+                    data-background-image="/images/firstcommit.png"
+                    data-background-repeat="no-repeat"
+                    data-background-size="contain"
+                    data-background-positon="center center"
+                    data-background-color="#ffffff">
 				</section>
 			</div>
 		</div>
@@ -44,6 +84,16 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				
+				transition: 'fade',
+				
+				width: 1920,
+                height: 1080,
+				
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
@@ -51,6 +101,12 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+			
+			Reveal.addEventListener('fragmentshown', function(event) {
+                if (event.fragment.className.indexOf('titleSlide') > -1) {
+                    event.fragment.className = event.fragment.className.replace('easeIn', '')
+                }
+            });
 		</script>
 	</body>
 </html>

@@ -4,6 +4,68 @@
     box-shadow: none;
 }
 
-body .reveal .controls {
+body .reveal .controls,
+.reveal.has-light-background .controls {
     color: #ea5906;
+}
+
+.about {
+    position: relative;
+}
+
+.about div {
+    font-size: 2em;
+}
+
+.about .fragment {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+}
+
+.reveal div.intro {
+    text-align: left;
+    padding: 20px 60px;
+    margin-left: 100px;
+    position: relative;
+    left: 40px;
+}
+
+.reveal div.intro:before {
+    content: "";
+    display: block;
+    background: #ea5906;
+    width: 20px;
+    height: 200px;
+    position: absolute;
+    transform: rotate(20deg);
+    top: 40px;
+    left: -20px;
+    transition: transform 0.4s;
+}
+
+.reveal div.intro.titleSlide:before {
+    background: #ea5906;
+}
+
+.reveal div.intro.easeIn:before {
+    transform: rotate(-60deg);
+}
+
+.reveal h2.intro:before {
+    content: "";
+    display: block;
+    background: #ea5906;
+    width: 10px;
+    height: 130px;
+    position: absolute;
+    transform: rotate(20deg);
+    top: 20px;
+    left: 0;
+    transition: transform 0.4s;
+}
+
+.reveal h2.intro.easeIn:before {
+    transform: rotate(-60deg);
 }
