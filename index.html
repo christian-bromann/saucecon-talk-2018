@@ -41,14 +41,37 @@
                     </div>
 				</section>
 				<section class="about">
-					<div class="fragment fade-up current-visible"><b>About:</b> WebdriverIO</div>
+					<div class="fragment fade-up current-visible">
+						<b>About:</b> WebdriverIO
+						<aside class="notes">
+	                		<ul>
+	                		    <li>Obviously as the title mention</li>
+	                            <li>Want to point out that:</li>
+								<li>even though we are at SauceCon, all contributions to that project even mine is made by people in their free time</li>
+								<li>it is a community driven project</li>
+								<li>and since September 2017 part of the js.foundation</li>
+	                		</ul>
+	                	</aside>
+					</div>
 					<div class="fragment"></div>
-					<div class="fragment fade-up current-visible"><b>Not About:</b> Selenium</div>
+					<div class="fragment fade-up current-visible">
+						<b>Not About:</b> Selenium
+						<aside class="notes">
+	                		<ul>
+	                		    <li>I know this might confuses some of you</li>
+	                            <li>if so, that is create because we gonna talk about how all these tools fit into the bigger picture and relate to each other</li>
+	                		</ul>
+	                	</aside>
+					</div>
 					<div class="fragment"></div>
 					
-					<div class="fragment fade-up current-visible"><b>About:</b> Automation Technology</div>
+					<div class="fragment fade-up current-visible">
+						<b>About:</b> Use Automation Technology to write tests
+					</div>
 					<div class="fragment"></div>
-					<div class="fragment fade-up current-visible"><b>Not About:</b> High Level Overview</div>
+					<div class="fragment fade-up current-visible">
+						<b>Not About:</b> Scrapping Websites
+					</div>
 					<div class="fragment"></div>
 					
 					<div class="fragment fade-up current-visible"><b>About:</b> Blackbox Testing</div>
@@ -72,7 +95,89 @@
                     data-background-size="contain"
                     data-background-positon="center center"
                     data-background-color="#ffffff">
+					<aside class="notes">
+						<ul>
+							<li>WebdriverIO used to be called WebdriverJS</li>
+							<li>One of the first NPM projects that allowed browser automation with Selenium WebDriver</li>
+							<li>Created by Camilo Tapia</li>
+							<li>Without him and this project I would probably never went into the space of testing</li>
+							<li>Unfortunatelly I've never met him</li>
+							<li>I started working on this project in March 2013</li>
+							<li>have been contributing to it since then</li>
+						</ul>
+					</aside>
 				</section>
+                <section
+                    data-background-image="/images/stats.png"
+                    data-background-repeat="no-repeat"
+                    data-background-size="80%"
+                    data-background-positon="center center"
+                    data-background-color="#ffffff">
+					<aside class="notes">
+						<ul>
+							<li>The NPM ecosystem is insane</li>
+							<li>There are tons of packages for everything</li>
+							<li>The same when you want to choose an automation framework to write your integration tests in</li>
+							<li>These are the most common used frameworks</li>
+							<li>To my suprise when I created this talk WD was even published before WebdriverIO</li>
+						</ul>
+					</aside>
+				</section>
+                <section
+                    data-background-image="/images/downloadStats.png"
+                    data-background-repeat="no-repeat"
+                    data-background-size="80%"
+                    data-background-positon="center center"
+                    data-background-color="#ffffff">
+					<aside class="notes">
+						<ul>
+							<li>Looking at the Download numbers we see that Protractor still seems to be the most used framework out there</li>
+							<li>I am not lying when I say that I literally check these stats everyday to see how WebdriverIO was doing</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<section
+	                    data-background-image="/images/scope.gif"
+	                    data-background-repeat="no-repeat"
+	                    data-background-size="cover"
+	                    data-background-positon="center center"
+	                    data-background-color="#ffffff">
+						<aside class="notes">
+							<ul>
+								<li>So you might be wondering hey, why is Selenium not on this chart?</li>
+								<li>The reason for that is that Seleniums is not mainly test framework</li>
+								<li>It is a utility tool that allows you to send command to a WebDriver endpoint to automate the browser</li>
+								<li>Which is why is a dependency of populare test frameworks like Protractor or Nightwatch</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<blockquote class="seleniumis">
+							Selenium is software that is an implementation of the WebDriver protocol for automating
+							browsers. One use of browser automation is testing websites, but there is nothing "official"
+							about ​it doing​ that in any form​. As a result, I'd like to see Selenium do a better job of
+							distinguishing itself as "browser automation" instead of "test automation."
+						</blockquote>
+					</section>
+					<section>
+						<div class="testframeworkfeatures">
+							<span class="a">Reporters</span>
+							<span class="b">Testrunner</span>
+							<span class="c">Configuration Management</span>
+							<span class="d">Assertion</span>
+							<span class="e">Extendability</span>
+							<span class="f">Debugging</span>
+							<span class="g">CLI</span>
+							<span class="h">Setup & Teardown</span>
+							<span class="i">Integration</span>
+							<span class="j">Watch Mode</span>
+							<span class="k">Test Hooks</span>
+						</div>
+					</section>
+				</section>
+				
+				
 			</div>
 		</div>
 

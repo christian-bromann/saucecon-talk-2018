@@ -1,3 +1,7 @@
+body .reveal .progress {
+    color: #ea5906;
+}
+
 .reveal section img.no-border {
     border: 0;
     background: none;
@@ -69,3 +73,54 @@ body .reveal .controls,
 .reveal h2.intro.easeIn:before {
     transform: rotate(-60deg);
 }
+
+body .reveal blockquote.seleniumis {
+    padding: 60px 60px 120px;
+}
+
+body .reveal blockquote.seleniumis:before {
+    display: block;
+    content: '"';
+    font-size: 430px;
+    font-family: Times New Roman;
+    position: absolute;
+    top: -190px;
+    left: -120px;
+}
+
+body .reveal blockquote.seleniumis:after {
+    display: block;
+    content: '<Titus Fortner>';
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: #ea5906;
+    font-size: 0.7em;
+}
+
+.reveal .testframeworkfeatures {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    bottom: 30px;
+}
+.reveal .testframeworkfeatures span {
+    position: absolute;
+    font-size: 2em;
+}
+.reveal .testframeworkfeatures span.highlight {
+    text-shadow: 0 0 .1em #ea5906, 0 0 0.2em #ea5906;
+    color: black;
+}
+
+.reveal .testframeworkfeatures span.a { left:  5%; top: 10% }
+.reveal .testframeworkfeatures span.b { left: 75%; top: 85% }
+.reveal .testframeworkfeatures span.c { left:  0%; top: 80% }
+.reveal .testframeworkfeatures span.d { left: 80%; top: 60% }
+.reveal .testframeworkfeatures span.e { left: 15%; top: 28% }
+.reveal .testframeworkfeatures span.f { left: 45%; top: 65% }
+.reveal .testframeworkfeatures span.g { left: 60%; top: 30% }
+.reveal .testframeworkfeatures span.h { left: 82%; top: 22% }
+.reveal .testframeworkfeatures span.i { left:  5%; top: 60% }
+.reveal .testframeworkfeatures span.j { left: 35%; top: 45% }
+.reveal .testframeworkfeatures span.k { left: 50%; top: 15% }
