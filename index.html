@@ -240,6 +240,19 @@
 							<img src="/images/arrow.png" class="arrow2 fragment" alt="">
 							<div class="arrowLabel2 fragment">TCP (Chrome DevTools)</div>
 							<img src="/images/chrome.jpg" class="chrome fragment" alt="">
+							<div class="fragment mobile">
+								<img src="/images/appium.png" class="appium" alt="">
+								<img src="/images/arrow.png" class="arrow3" alt="">
+								<img src="/images/chromedriver.png" class="chromedriver2" alt="">
+								<img src="/images/arrow.png" class="arrow4" alt="">
+								<img src="/images/iphone.png" class="iphone" alt="">
+								<img src="/images/android.png" class="android" alt="">
+								<div class="arrowLabel3">
+									TCP (ADB / Xcode)<br>
+									<b>web testing:</b> Chrome DevTools<br>
+									<b>native testing:</b> UIAutomator
+								</div>
+							</div>
 							<aside class="notes">
 								<ul>
 									<li>I get a lot of questions that are like: "Does WebdriverIO support IE11?"</li>
@@ -290,6 +303,12 @@
 				}
 				if (event.fragment.className.indexOf('chromedriver') > -1) {
 					event.fragment.style.transform = 'rotate(1440deg)';
+				}
+				if (event.fragment.className.indexOf('mobile') > -1) {
+					document.querySelector('.webdriverway .chromedriver').style.opacity = 0;
+					document.querySelector('.webdriverway .chrome').style.opacity = 0;
+					document.querySelector('.webdriverway .arrow2').style.opacity = 0;
+					document.querySelector('.webdriverway .arrowLabel2').style.opacity = 0;
 				}
             });
 			Reveal.addEventListener('slidechanged', function(event) {
