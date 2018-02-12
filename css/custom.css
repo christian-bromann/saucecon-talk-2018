@@ -98,7 +98,9 @@ body .reveal blockquote.seleniumis:after {
     font-size: 0.7em;
 }
 
-.reveal .testframeworkfeatures {
+.reveal .testframeworkfeatures,
+.reveal .cypresstweets,
+.reveal .webdriverway {
     width: 100%;
     height: 1100px;
     position: relative;
@@ -110,7 +112,7 @@ body .reveal blockquote.seleniumis:after {
 }
 .reveal .testframeworkfeatures span.highlight {
     text-shadow: 0 0 .1em #ea5906, 0 0 0.2em #ea5906;
-    color: black;
+    color: #ea5906;
 }
 
 .reveal .testframeworkfeatures span.a { left:  5%; top: 10% }
@@ -124,3 +126,269 @@ body .reveal blockquote.seleniumis:after {
 .reveal .testframeworkfeatures span.i { left:  5%; top: 60% }
 .reveal .testframeworkfeatures span.j { left: 35%; top: 45% }
 .reveal .testframeworkfeatures span.k { left: 50%; top: 15% }
+
+.reveal .cypresstweets img {
+    position: absolute;
+    border: 0;
+}
+.reveal .cypresstweets .tweet1 { transform: rotate(10deg); }
+.reveal .cypresstweets .tweet2 {
+    left: 0;
+    bottom: 10px;
+    transform: rotate(-10deg);
+}
+.reveal .cypresstweets .tweet3 {
+    left: 70%;
+    top: -4%;
+    transform: rotate(-10deg);
+}
+.reveal .cypresstweets .tweet4 {
+    bottom: 10px;
+    right: 12%;
+    transform: rotate(5deg);
+}
+.reveal .cypresstweets .tweet5 {
+    left: 0;
+    transform: rotate(-28deg);
+}
+.reveal .cypresstweets .tweet6 {
+    right: -10%;
+    top: 40%;
+    transform: rotate(5deg);
+}
+.reveal .cypresstweets .tweet7 {
+    left: -10%;
+    top: 30%;
+    transform: rotate(20deg);
+}
+.reveal .cypresstweets .tweet8 {
+    top: 68%;
+    left: 29%;
+    transform: rotate(10deg);
+}
+.reveal .cypresstweets .tweet9 {
+    left: 23%;
+}
+.reveal .cypresstweets .tweet10 {
+    right: -5%;
+    top: 5%;
+    transform: rotate(41deg);
+}
+.reveal .cypresstweets .tweet11 {
+    top: 64%;
+    right: 7%;
+    transform: rotate(-11deg);
+}
+.reveal .cypresstweets .tweet12 {
+    top: 71%;
+    left: 15%;
+    transform: rotate(10deg);
+}
+.reveal .cypresstweets .tweet13 {
+    left: 75%;
+    top: 18%;
+    transform: rotate(-15deg);
+}
+.reveal .cypresstweets .tweet14 {
+    left: 4%;
+    top: 21%;
+    transform: rotate(-10deg);
+}
+.reveal .cypresstweets .tweet15 {
+    top: 67%;
+    right: -10%;
+    transform: rotate(4deg);
+}
+.reveal .cypresstweets .tweet16 {
+    top: 9%;
+    left: 36%;
+}
+.reveal .cypresstweets .tweet17 {
+    bottom: -18%;
+    left: 40%;
+}
+.reveal .cypresstweets .tweet18 {
+    left: -10%;
+    top: 60%;
+    transform: rotate(-20deg);
+}
+.reveal .cypresstweets .tweet19 {
+    left: -4%;
+    top: -10%;
+    transform: rotate(-10deg);
+}
+.reveal .cypresstweets .tweet20 {
+    right: -14%;
+    top: -14%;
+    transform: rotate(27deg);
+}
+.reveal .cypresstweets .tweet21 {
+    bottom: -6%;
+    right: -1%;
+    transform: rotate(10deg);
+}
+.reveal .cypresstweets .tweet22 {
+    top: -10%;
+    left: 30%;
+    transform: rotate(5deg);
+}
+.reveal .cypresstweets .tweet23 {
+    left: 78%;
+    top: 40%;
+    transform: rotate(10deg);
+}
+.reveal .cypresstweets .tweet24 {
+    left: 40%;
+    top: 61%;
+}
+.reveal .cypresstweets .tweet25 {
+    left: 56%;
+    top: -10%;
+}
+.reveal .cypresstweets .tweet26 {
+    left: -4%;
+    top: 82%;
+    transform: rotate(20deg);
+}
+.reveal .cypresstweets .tweet27 {
+    top: 73%;
+    transform: rotate(8deg);
+}
+.reveal .cypresstweets .tweet28 {
+    left: -9%;
+    top: 22%;
+    transform: rotate(29deg);
+}
+.reveal .cypresstweets .tweet29 {
+    top: 12%;
+    left: 59%;
+    transform: rotate(-20deg);
+}
+.reveal .cypresstweets .tweet30 {
+    left: 65%;
+    top: 93%;
+    transform: rotate(-10deg);
+}
+.reveal .cypresstweets .tweet31 {
+    left: 6%;
+    top: 0%;
+    transform: rotate(-12deg);
+}
+.reveal .cypresstweets .tweet32 {
+    left: 17%;
+    top: 70%;
+    transform: rotate(-10deg);
+}
+.reveal .cypresstweets .tweet33 {
+    left: 76%;
+    top: 59%;
+    transform: rotate(-3deg);
+}
+.reveal .cypresstweets .tweet34 {
+    left: -7%;
+    top: 51%;
+    transform: rotate(-10deg);
+}
+.reveal .cypresstweets .tweet35 {
+    left: 78%;
+    top: 23%;
+    transform: rotate(-6deg);
+}
+.reveal .cypresstweets .tweet36 {
+    left: 70%;
+    top: 68%;
+    transform: rotate(5deg);
+}
+.reveal .cypresstweets .tweet37 {
+    left: 14%;
+    top: -18%;
+    transform: rotate(3deg);
+}
+.reveal .cypresstweets .tweet38 {
+    left: 70%;
+    top: 5%;
+    transform: rotate(5deg);
+}
+.reveal .cypresstweets .tweet39 {
+    left: 30%;
+    top: 83%;
+}
+
+.reveal .webdriverway .script {
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    width: 300px;
+}
+.reveal .webdriverway .script img,
+.reveal .webdriverway .arrow1,
+.reveal .webdriverway .arrow2,
+.reveal .webdriverway .chromedriver,
+.reveal .webdriverway .chrome {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+.reveal .languages {
+    position: absolute;
+    width: 100px;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.reveal .languages.js {
+    left: -23%;
+    top: 20%;
+}
+.reveal .languages.ruby {
+    left: 40%;
+    bottom: 95%;
+}
+.reveal .languages.php {
+    left: 97%;
+    top: 30%;
+}
+.reveal .languages.python {
+    top: 88%;
+    left: 3%;
+}
+.reveal .languages.java {
+    left: 70%;
+    top: 85%;
+}
+
+.reveal .webdriverway .arrow1 {
+    position: absolute;
+    left: 26%;
+    top: 48%;
+}
+
+.reveal .webdriverway .arrow2 {
+    position: absolute;
+    left: 57%;
+    top: 48%;
+}
+
+.reveal .slides section .webdriverway .chromedriver {
+    position: absolute;
+    left: 41%;
+    top: 41%;
+    width: 300px;
+    transform: rotate(0);
+    transition: transform 3s ease-in-out;
+}
+.reveal .webdriverway .chrome {
+    position: absolute;
+    left: 75%;
+    top: 35%;
+    width: 450px;
+}
+.reveal .webdriverway .arrowLabel {
+    position: absolute;
+    left: 25%;
+    top: 43%;
+}
+.reveal .webdriverway .arrowLabel2 {
+    position: absolute;
+    left: 54%;
+    top: 43%;
+}
