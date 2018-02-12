@@ -107,11 +107,16 @@ body .reveal blockquote.seleniumis:after {
     position: relative;
     bottom: 30px;
 }
+.reveal .slides section .testframeworkfeatures .fragment.current-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
 .reveal .testframeworkfeatures span {
     position: absolute;
     font-size: 2em;
 }
-.reveal .testframeworkfeatures span.highlight {
+.reveal .slides .testframeworkfeatures span.current-fragment {
     text-shadow: 0 0 .1em #ea5906, 0 0 0.2em #ea5906;
     color: #ea5906;
 }
@@ -456,4 +461,15 @@ body .reveal blockquote.seleniumis:after {
 }
 .reveal .cypressway .arrowLabel {
     left: 21%;
+}
+.reveal .diffwd {
+    position: absolute; width: 40%; left: 10%; top: 30%;
+}
+.reveal .diffcy {
+    position: absolute; width: 40%; left: 56%; top: 30%;
+}
+
+.reveal .diffwd li,
+.reveal .diffcy li {
+    margin-bottom: 20px;
 }
