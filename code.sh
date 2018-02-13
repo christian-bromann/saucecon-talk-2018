@@ -33,7 +33,7 @@ $ npm init --yes
 #    "test": "wdio wdio.conf.js"
 #  },
 
-# ==> explain page objects
+# ==> explain page objects (next slide)
 
 # page.js
 export default class Page {
@@ -70,10 +70,20 @@ $ npm i babel-preset-es2015 babel-register
 }
 
 # run test, validate that it works
+# ==> Split up config files per environment
 
 # ==> How to go about creating a test
 $ chromedriver --port=4444 --url-base=/wd/hub --verbose
 $ node_modules/.bin/wdio repl chrome
+
+# test around and then show off DevTools example
+# ==> Debugging
+# show case debug command again
+browser.debug()
+# add mochaOpts timeout
+# switch to DevTools debugging
+execArgv: ['--inspect'],
+# open devtools in browser and switch to node
 
 # ==> test collapse/expand of the tabs
 import Page from './page'
@@ -118,11 +128,3 @@ onComplete: function(exitCode, config, capabilities) {
     var generation = allure(['generate', 'reports'])
     return new Promise((resolve) => generation.on('exit', resolve))
 }
-
-# ==> Debugging
-# show case debug command again
-browser.debug()
-# add mochaOpts timeout
-# switch to DevTools debugging
-execArgv: ['--inspect'],
-# open devtools in browser and switch to node

@@ -481,3 +481,26 @@ body .reveal blockquote.seleniumis:after {
     margin: 30px 0;
     font-size: 1.2em;
 }
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ea5906, 0 0 70px #ea5906, 0 0 80px #ea5906, 0 0 100px #ea5906, 0 0 150px #ea5906;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ea5906, 0 0 35px #ea5906, 0 0 40px #ea5906, 0 0 50px #ea5906, 0 0 75px #ea5906;
+  }
+}
+
+.reveal .glow {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #ea5906;
+    font-weight: bold;
+    font-size: 10em;
+    font-family: Pacifico;
+    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+}
