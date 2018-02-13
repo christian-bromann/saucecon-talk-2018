@@ -473,3 +473,11 @@ body .reveal blockquote.seleniumis:after {
 .reveal .diffcy li {
     margin-bottom: 20px;
 }
+
+.reveal .pageobjects ul {
+    margin: 50px 0;
+}
+.reveal .pageobjects ul li {
+    margin: 30px 0;
+    font-size: 1.2em;
+}
