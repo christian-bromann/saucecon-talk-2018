@@ -312,7 +312,142 @@
 	                    data-background-color="#000">
 						<h1 class="glow">v5</h1>
 					</section>
+					<section
+						data-background-image="/images/whistlist.png"
+	                    data-background-repeat="no-repeat"
+	                    data-background-size="contain"
+	                    data-background-positon="center center"
+	                    data-background-color="#ffffff">
+						<aside class="notes">
+							<ul>
+								<li>I want the project to be more community driven</li>
+								<li>Everyone has different testing requirements</li>
+								<li>So I ask the people: what would you guys whish?</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-color="#222">
+						<div style="font-size: 1.8em; color: #444; font-weight: 100; text-align: center;">
+							wdio-allure-reporter wdio-cli wdio-concise-reporter wdio-config
+							wdio-cucumber-framework wdio-devtools-service wdio-dot-reporter
+							wdio-firefox-profile-service wdio-interface wdio-jasmine-framework
+							wdio-lambda-runner
+						</div>
+						<div style="font-size: 1.8em; margin: 100px 0;">
+							<em style="color: #ea5906">WDIO's</em> Packages
+						</div>
+						<div style="font-size: 1.8em; color: #444; font-weight: 100; text-align: center;">
+							wdio-local-runner wdio-logger wdio-mocha-framework wdio-reporter
+							wdio-runner wdio-sauce-service wdio-spec-reporter wdio-sumologic-reporter
+							wdio-sync wdio-xml-reporter webdriver webdriverio
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>I really wanted to make contribution to this project easy</li>
+								<li>Everyone no matter what skill set should be able to help</li>
+								<li>By moving everything into one big monolithic repo it becomes more straightforward to internally test the packages</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="pkgs">
+						<span>webdriver</span>
+						<span>webdriverio</span>
+						<span>wdio-cli</span>
+					</section>
+					<section class="withcode">
+						<h1>webdriver</h1>
+						<pre><code data-trim data-noescape>
+import WebDriver from 'webdriver'
+ 
+;(async function () {
+    const client = await WebDriver.newSession({
+        path: '/',
+        capabilities: { browserName: 'firefox' }
+    })
+
+    await client.navigateTo('https://www.google.com/ncr')
+
+    const searchInput = await client.findElement('css selector', '#lst-ib')
+    await client.elementSendKeys(searchInput['element-6066-11e4-a52e-4f735466cecf'], 'WebDriver')
+
+    const searchBtn = await client.findElement('css selector', 'input[value="Google Search"]')
+    await client.elementClick(searchBtn['element-6066-11e4-a52e-4f735466cecf'])
+
+    console.log(await client.getTitle()) // outputs "WebDriver - Google Search"
+
+    await client.deleteSession()
+})()
+</code></pre>
+					</section>
+					<section class="withcode">
+						<h1>webdriverio</h1>
+						<pre><code data-trim data-noescape>
+import { remote } from 'webdriverio'
+
+;(async function () {
+    const client = remote({
+        path: '/',
+        capabilities: { browserName: 'firefox' }
+    })
+
+    await client.url('https://www.google.com/ncr')
+
+    const searchInput = await client.element('#lst-ib')
+    await searchInput.setValue()
+
+    const searchBtn = await client.element('input[value="Google Search"]')
+    await client.click()
+
+    console.log(await client.getTitle()) // outputs "WebDriver - Google Search"
+    await client.deleteSession()
+})()
+</code></pre>
+					</section>
+					<section class="withcode">
+						<h1>wdio-cli</h1>
+						<pre><code data-trim data-noescape>
+describe("my feature", () => {
+    it("should be able to do this", () => {
+        browser.url("/")
+		
+        const searchInput = $("#lst-ib")
+        searchInput.setValue()
+
+        const searchBtn = $("input[value='Google Search']")
+        browser.click()
+
+        console.log(browser.getTitle()) // outputs "WebDriver - Google Search" 
+    })
+})
+</code></pre>
+					</section>
+					<section
+						data-background-image="/images/steve-jobs-one-more-thing.jpg"
+	                    data-background-repeat="no-repeat"
+	                    data-background-size="contain"
+	                    data-background-positon="center center"
+	                    data-background-color="#000">
+					</section>
+					<section>
+						<h1 class="fragment">reporters</h1>
+						<h1 class="fragment">services</h1>
+						<h1 class="fragment">runners</h1>
+					</section>
 				</section>
+				<section>
+					<h1 style="margin: 0 0 130px;">Help & Support</h1>
+					
+					<h4 class="smallicon home"><b>Project Homepage</b> - http://webdriver.io</h4>
+					<h4 class="smallicon github"><b>GitHub</b> - https://github.com/webdriverio</h4>
+					<h4 class="smallicon gitter"><b>Gitter</b> - https://gitter.im/webdriverio/webdriverio</h4>
+					<h4 class="smallicon ol"><b>Online Learning Course</b> - https://learn.webdriver.io</h4>
+					<h4 class="smallicon yt"><b>Kevin Lamping @ YouTube</b> - https://www.youtube.com/user/medigerati</h4>
+				</section>
+				<section data-background-color="#222">
+					<img src="/images/webdriverio.svg" class="no-border" width="600">
+					<h3 style="position: absolute; top: 81%; left: 43%;">Thank You !</h3>
+				</section>
+			</section>
 			</div>
 		</div>
 

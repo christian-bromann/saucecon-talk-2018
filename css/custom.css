@@ -381,7 +381,7 @@ body .reveal blockquote.seleniumis:after {
     top: 41%;
     width: 300px;
     transform: rotate(0);
-    transition: transform 3s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 .reveal .webdriverway .chrome {
     position: absolute;
@@ -503,4 +503,18 @@ body .reveal blockquote.seleniumis:after {
     -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
     -moz-animation: neon3 1.5s ease-in-out infinite alternate;
     animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+.pkgs span {
+    font-size: 2em;
+    padding: 0 50px
+}
+
+.reveal .withcode code {
+    max-height: 800px;
+    padding: 20px;
+}
+
+body .reveal pre {
+    font-size: 0.75em;
 }
