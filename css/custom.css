@@ -518,3 +518,13 @@ body .reveal blockquote.seleniumis:after {
 body .reveal pre {
     font-size: 0.75em;
 }
+
+.reveal .sauceme {
+    border:0;
+    box-shadow: none;
+    background: transparent;
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    width: 500px;
+}
