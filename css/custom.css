@@ -90,7 +90,7 @@ body .reveal blockquote.seleniumis:before {
 
 body .reveal blockquote.seleniumis:after {
     display: block;
-    content: '<Titus Fortner>';
+    content: '<Selenium Documentation>';
     position: absolute;
     bottom: 10%;
     right: 10%;

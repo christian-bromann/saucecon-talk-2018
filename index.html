@@ -28,6 +28,18 @@
 				<section>
 					<img src="/images/webdriverio.svg" class="no-border" width="600">
 					<h2 style="position: relative; bottom: 100px;">BUILDING SCALABLE AND STABLE E2E TEST SUITES WITH WEBDRIVERIO</h2>
+					<aside class="notes">
+						<ul>
+							<li>I hope you guys enjoyed your lunch</li>
+							<li>... and are excited for the last SauceCon 2018 afternoon session</li>
+							<li>I will kick it off with a talk about WebdriverIO</li>
+							<li>And let me tell you something: I love talking about WebdriverIO</li>
+							<li>I've been working on this project for more than 5 years now</li>
+							<li>and it is funny everytime I nerd around with Titus (Selenium
+								contributor for the Ruby bindings) about Selenium and Test automation
+								it is always like...</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-background="#fff">
 					<div class="fragment titleSlide easeIn intro">
@@ -45,9 +57,11 @@
 						<b>About:</b> WebdriverIO
 						<aside class="notes">
 	                		<ul>
+								<li>Ok, so what is this talk about...</li>
 	                		    <li>Obviously as the title mention</li>
 	                            <li>Want to point out that:</li>
-								<li>even though we are at SauceCon, all contributions to that project even mine is made by people in their free time</li>
+								<li>even though we are at SauceCon, all contributions to that
+									project even mine is made by people in their free time</li>
 								<li>it is a community driven project</li>
 								<li>and since September 2017 part of the js.foundation</li>
 	                		</ul>
@@ -59,7 +73,8 @@
 						<aside class="notes">
 	                		<ul>
 	                		    <li>I know this might confuses some of you</li>
-	                            <li>if so, that is create because we gonna talk about how all these tools fit into the bigger picture and relate to each other</li>
+	                            <li>if so, that is great because we gonna talk about how all these
+									tools fit into the bigger picture and relate to each other</li>
 	                		</ul>
 	                	</aside>
 					</div>
@@ -74,9 +89,24 @@
 					</div>
 					<div class="fragment"></div>
 					
-					<div class="fragment fade-up current-visible"><b>About:</b> Live Coding</div>
+					<div class="fragment fade-up current-visible">
+						<b>About:</b> Live Coding
+						<aside class="notes">
+	                		<ul>
+	                		    <li>I will do most of the talk showing you how to build up
+									a test suite via live coding</li>
+	                        </ul>
+	                	</aside>
+					</div>
 					<div class="fragment"></div>
-					<div class="fragment fade-up current-visible"><b>Not About:</b> Theoretical Approaches</div>
+					<div class="fragment fade-up current-visible">
+						<b>Not About:</b> Theoretical Approaches
+						<aside class="notes">
+	                		<ul>
+	                		    <li>You guys find these in all the other talks</li>
+	                        </ul>
+	                	</aside>
+					</div>
 					<div class="fragment"></div>
 					
 					<div class="fragment fade-up current-visible"><b>About:</b> JavaScript</div>
@@ -86,7 +116,16 @@
 					
 					<div class="fragment fade-up current-visible"><b>About:</b> Showing off WebdriverIO</div>
 					<div class="fragment"></div>
-					<div class="fragment fade-up current-visible"><b>Not About:</b> Selling you a framework</div>
+					<div class="fragment fade-up current-visible">
+						<b>Not About:</b> Selling you a framework
+						<aside class="notes">
+	                		<ul>
+	                		    <li>I am not trying to say that this is how it should be</li>
+								<li>There are other similar approaches that might work for you as well</li>
+								<li>If you use these maybe this gives you some inspiration</li>
+	                        </ul>
+	                	</aside>
+					</div>
 					<div class="fragment"></div>
 				</section>
                 <section
@@ -98,9 +137,11 @@
 					<aside class="notes">
 						<ul>
 							<li>WebdriverIO used to be called WebdriverJS</li>
-							<li>One of the first NPM projects that allowed browser automation with Selenium WebDriver</li>
+							<li>One of the first NPM projects that allowed browser automation
+								with Selenium WebDriver</li>
 							<li>Created by Camilo Tapia</li>
-							<li>Without him and this project I would probably never went into the space of testing</li>
+							<li>Without him and this project I would probably never went into the space
+								of testing</li>
 							<li>Unfortunatelly I've never met him</li>
 							<li>I started working on this project in March 2013</li>
 							<li>have been contributing to it since then</li>
@@ -117,9 +158,11 @@
 						<ul>
 							<li>The NPM ecosystem is insane</li>
 							<li>There are tons of packages for everything</li>
-							<li>The same when you want to choose an automation framework to write your integration tests in</li>
+							<li>The same when you want to choose an automation framework to
+								write your integration tests in</li>
 							<li>These are the most common used frameworks</li>
-							<li>To my suprise when I created this talk WD was even published before WebdriverIO</li>
+							<li>To my suprise when I created this talk WD was even published before
+								WebdriverIO</li>
 						</ul>
 					</aside>
 				</section>
@@ -131,8 +174,10 @@
                     data-background-color="#ffffff">
 					<aside class="notes">
 						<ul>
-							<li>Looking at the Download numbers we see that Protractor still seems to be the most used framework out there</li>
-							<li>I am not lying when I say that I literally check these stats everyday to see how WebdriverIO was doing</li>
+							<li>Looking at the Download numbers we see that Protractor still seems to
+								be the most used framework out there</li>
+							<li>I am not lying when I say that I literally check these stats everyday to
+								see how WebdriverIO was doing</li>
 						</ul>
 					</aside>
 				</section>
@@ -147,18 +192,28 @@
 							<ul>
 								<li>So you might be wondering hey, why is Selenium not on this chart?</li>
 								<li>The reason for that is that Seleniums is not mainly test framework</li>
-								<li>It is a utility tool that allows you to send command to a WebDriver endpoint to automate the browser</li>
-								<li>Which is why is a dependency of populare test frameworks like Protractor or Nightwatch</li>
+								<li>It is a utility tool that allows you to send command to a WebDriver
+									endpoint to automate the browser</li>
+								<li>Which is why is a dependency of populare test frameworks like Protractor
+									or Nightwatch</li>
 							</ul>
 						</aside>
 					</section>
 					<section>
 						<blockquote class="seleniumis">
-							Selenium is software that is an implementation of the WebDriver protocol for automating
-							browsers. One use of browser automation is testing websites, but there is nothing "official"
-							about ​it doing​ that in any form​. As a result, I'd like to see Selenium do a better job of
-							distinguishing itself as "browser automation" instead of "test automation."
+							Selenium is many things, but at its core it's a toolset for web
+							browser automation that uses the best techniques available to
+							remotely control browser instances and emulate a user's interaction
+							with the browser.
 						</blockquote>
+						<aside class="notes">
+							<ul>
+								<li>You can use Selenium for testing (which is actually the most
+									common use case) but it is not a test framework</li>
+								<li>WebdriverIO could use the Selenium bindings for most of its commands</li>
+								<li>but doesn't for various reasons</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<div class="testframeworkfeatures">
@@ -175,6 +230,45 @@
 							<span class="k fragment current-visible">Test Hooks</span>
 							<span class="fragment current-visible"></span>
 						</div>
+						<aside class="notes">
+							<ul>
+								<li>Reporters:
+									You want to have nice spec or junit reports that actually
+									specify the capabilities and other meta information of the
+									test it is reporting</li>
+								<li>Testrunner:
+									You want a tool that runs your tests in parallel for you
+									to speed up the test execution time</li>
+								<li>Configuration Management:
+									This is about seperation of concerns: you want to have the
+									configuration aspects of your tests seperated from your test</li>
+								<li>Assertion:
+									It is easier to identify errors with error messages and
+									snapshot comparisons as well as it makes the code more readable</li>
+								<li>Extendability:
+									You wanna be able to extend your suite with plugins to solve
+									problems other people have already solved</li>
+								<li>Debugging:
+									This is the most important feature of all. As easier it is
+									to debug your automated test as easier it is for you to build
+									stable test suites</li>
+								<li>CLI:
+									A nice command line interface can not only help to set up
+									things quicker but also to easier run test suites on CI</li>
+								<li>Setup & Teardown:
+									Let the test lifecycle be managed by a tool instead of yourself</li>
+								<li>
+									Integration:
+									with IDEs (e.g. code completion) or arbitrary tools
+									(e.g. Grunt, Gulp)</li>
+								<li>Watch Mode:
+									Be able to rerun your test suite everytime you hit safe (not
+									that important)</li>
+								<li>Test Hooks:
+									Execute certain tasks when certain events appear (e.g. take
+									screenshot when test fails)</li>
+							</ul>
+						</aside>
 					</section>
 					<section
 						data-background-image="/images/cypress.png"
@@ -223,6 +317,18 @@
 							<img src="/images/cypress/37.png" alt="" style="display:none" class="tweet37">
 							<img src="/images/cypress/38.png" alt="" style="display:none" class="tweet38">
 						</div>
+						<aside class="notes">
+							<ul>
+								<li>You might have heard about Cypress.io</li>
+								<li>It currently receives a lot of well deserve comments on Twitter</li>
+								<li>People are really happy with the ease of setting things up and writing tests</li>
+								<li>Made by a company in Atlanta</li>
+								<li>It is a testrunner that runs your tests in an Electron App or in Chrome directly</li>
+								<li>I reminds me a lot of the JavaScript testrunner which was the first version
+									to run tests with using Selenium (even before Selenium RC)</li>
+								<li>But instead of emulating events using JS they use the Chrome DevTools interface</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<div class="webdriverway">
@@ -256,6 +362,17 @@
 							</div>
 							<aside class="notes">
 								<ul>
+									<li>In WebDriver you have</li>
+									<li>1) your test script using a test framework (could be written in any language)</li>
+									<li>2) a WebDriver endpoint (a browser driver)</li>
+									<li>they communicate of the WebDriver specification (which is not more or less a rule set)</li>
+									<li>3) at the end is the browser</li>
+									<li>The communication between browser (target device) and driver depends on the target device</li>
+									<li>For mobile it is even a bit more complicated</li>
+									<li>If you do web testing on the phone Appium is also using Chromedriver for example</li>
+									<li>But before it relays the commands to it it uses ADB or XCode to setup the device for you</li>
+									<li>For testing native Apps Appium automatically switches to the OS's native automation framework</li>
+									<li>At the end all you need to do is speak webdriver like in Web</li>
 									<li>I get a lot of questions that are like: "Does WebdriverIO support IE11?"</li>
 								</ul>
 							</aside>
@@ -272,6 +389,20 @@
 							<div class="arrowLabel fragment">WebSocket</div>
 							<img src="/images/cypress-testrunner.png" alt="" class="fragment cypressapp">
 						</div>
+						<aside class="notes">
+							<ul>
+								<li>They only concentrate on support for Node.js</li>
+								<li>Then there is nothing in between</li>
+								<li>The test directly communicates with the browser</li>
+								<li>only works for Chrome now (FF supported is announced)</li>
+								<li>So the simplicity of setting up a test comes from the
+									lack components you need to set up</li>
+								<li>There is no translator necessary and no Specification that
+									needs to be adhered to</li>
+								<li>Cypress.io is doing a great job here in making it really easy for
+									developers</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<div class="cypressway">
@@ -287,6 +418,21 @@
 								<li>Only support for Node.JS</li>
 							</ul>
 						</div>
+						<aside class="notes">
+							<ul>
+								<li>The advantage of having something like a WebDriver specification allows
+									us to write driver for literally every end device really easy and straightforward</li>
+								<li>This is why Appiums has the vision to become the StarDriver</li>
+								<li>The Problem: the WebDriver spec is the lowest denominator for commands that can be
+									supported by all these devices</li>
+								<li>It lacks on features like Request Stubbing or other debugging utilities (e.g. DOM snapshots)</li>
+								<li>However: I am super confident that the people working on that specification will
+									add more useful commands or features that makes our e2e tests better</li>
+								<li>Just a hint: in the last talk with Slav and myself we will introduce extended
+									debugging at sauce so you might want to check that out</li>
+								<li>Cypress.io has currently not the problem of having to support so many devices</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
