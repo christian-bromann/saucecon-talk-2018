@@ -1,3 +1,7 @@
+##########
+## CLI ###
+##########
+
 # go to tmp directory
 $ cd Sites/talks/Building\ Scaleable\ And\ Stable\ E2E\ Test\ Suites\ With\ WebdriverIO
 
@@ -14,7 +18,15 @@ $ ./node_modules/.bin/wdio
 # open atom
 $ atom .
 
+###############################
+## Configuration Management ###
+###############################
 # go through config properties
+
+################
+## Assertion ###
+################
+
 # write a test file
 const assert = require('assert')
 
@@ -62,6 +74,10 @@ describe('saucecon test', () => {
     })
 })
 
+##################
+## Integration ###
+##################
+
 # install babel
 $ npm i babel-preset-es2015 babel-register
 # .babelrc
@@ -76,6 +92,10 @@ $ npm i babel-preset-es2015 babel-register
 $ chromedriver --port=4444 --url-base=/wd/hub --verbose
 $ node_modules/.bin/wdio repl chrome
 
+################
+## Debugging ###
+################
+
 # test around and then show off DevTools example
 # ==> Debugging
 # show case debug command again
@@ -84,6 +104,10 @@ browser.debug()
 # switch to DevTools debugging
 execArgv: ['--inspect'],
 # open devtools in browser and switch to node
+
+# test protocol:
+browser.url("http://saucecon.com")
+
 
 # ==> test collapse/expand of the tabs
 import Page from './page'
@@ -111,6 +135,10 @@ it('should allow to open workshop tab', () => {
     SauceCon.openWorkshopTab()
 })
 
+################
+## Reporters ###
+################
+
 # ==> Reporter Show cases
 # add allure reporter and reporter options
 reporters: ['spec', 'allure'],
@@ -119,6 +147,10 @@ reporterOptions: {
         outputDir: './reports'
     }
 },
+
+#################
+## Test Hooks ###
+#################
 
 # run code, install Allure command-line tool to generate the page
 $ npm install allure-commandline
