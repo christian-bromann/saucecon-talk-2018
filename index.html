@@ -33,6 +33,8 @@
                             <li>I hope you guys enjoyed your lunch</li>
                             <li>... and are excited for the last SauceCon 2018 afternoon session</li>
                             <li>I will kick it off with a talk about WebdriverIO</li>
+                            <li>By show of hands, who has heard about WebdriverIO?</li>
+                            <li>... and who is using it?</li>
                             <li>And let me tell you something: I love talking about WebdriverIO</li>
                             <li>I've been working on this project for more than 5 years now</li>
                             <li>and it is funny everytime I nerd around with Titus (Selenium
@@ -122,7 +124,7 @@
                     <div class="fragment"><aside class="notes"></aside></div>
                     
                     <div class="fragment fade-up current-visible">
-                        <b>Not About:</b> Java
+                        <b>Not About:</b> Java, Ruby, Python, C# and others
                         <aside class="notes"></aside>
                     </div>
                     <div class="fragment"><aside class="notes"></aside></div>
@@ -157,10 +159,10 @@
                             <li>One of the first NPM projects that allowed browser automation
                                 with Selenium WebDriver</li>
                             <li>Created by Camilo Tapia</li>
+                            <li>I started working on this project in March 2013</li>
+                            <li>Unfortunatelly I've never met him</li>
                             <li>Without him and this project I would probably never went into the space
                                 of testing</li>
-                            <li>Unfortunatelly I've never met him</li>
-                            <li>I started working on this project in March 2013</li>
                             <li>have been contributing to it since then</li>
                         </ul>
                     </aside>
@@ -195,6 +197,8 @@
                                 be the most used framework out there</li>
                             <li>I am not lying when I say that I literally check these stats everyday to
                                 see how WebdriverIO was doing</li>
+                            <li>I hope that WebdriverIOs download numbers will exceed the ones from Protractor</li>
+                            <li>I will try my best to get there, you guys can of course help me with that</li>
                         </ul>
                     </aside>
                 </section>
@@ -213,6 +217,8 @@
                                     endpoint to automate the browser</li>
                                 <li>Which is why is a dependency of populare test frameworks like Protractor
                                     or Nightwatch</li>
+                                <li>So let's have a little closer look on where these tools are located in the
+                                    automation chain and what role they are playing</li>
                             </ul>
                         </aside>
                     </section>
@@ -234,58 +240,130 @@
                     </section>
                     <section>
                         <div class="testframeworkfeatures">
-                            <span class="a fragment current-visible">Reporters</span>
-                            <span class="b fragment current-visible">Testrunner</span>
-                            <span class="c fragment current-visible">Configuration Management</span>
-                            <span class="d fragment current-visible">Assertion</span>
-                            <span class="e fragment current-visible">Extendability</span>
-                            <span class="f fragment current-visible">Debugging</span>
-                            <span class="g fragment current-visible">CLI</span>
-                            <span class="h fragment current-visible">Setup & Teardown</span>
-                            <span class="i fragment current-visible highlight">Integration</span>
-                            <span class="j fragment current-visible">Watch Mode</span>
-                            <span class="k fragment current-visible">Test Hooks</span>
+                            <span class="a fragment current-visible">
+                                Reporters
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Reporters:</b>
+                                            You want to have nice spec or junit reports that actually
+                                            specify the capabilities and other meta information of the
+                                            test it is reporting
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="b fragment current-visible">
+                                Testrunner
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Testrunner:</b>
+                                            You want a tool that runs your tests in parallel for you
+                                            to speed up the test execution time
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="c fragment current-visible">
+                                Configuration Management
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Configuration Management:</b>
+                                            This is about seperation of concerns: you want to have the
+                                            configuration aspects of your tests seperated from your test
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="d fragment current-visible">
+                                Assertion
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Assertion:</b>
+                                            It is easier to identify errors with error messages and
+                                            snapshot comparisons as well as it makes the code more readable
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="e fragment current-visible">
+                                Extendability
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Extendability:</b>
+                                            You wanna be able to extend your suite with plugins to solve
+                                            problems other people have already solved
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="f fragment current-visible">
+                                Debugging
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Debugging:</b>
+                                            This is the most important feature of all. As easier it is
+                                            to debug your automated test as easier it is for you to build
+                                            stable test suites
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="g fragment current-visible">
+                                CLI
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>CLI:</b>
+                                            A nice command line interface can not only help to set up
+                                            things quicker but also to easier run test suites on CI
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="h fragment current-visible">
+                                Setup & Teardown
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Setup & Teardown:</b>
+                                            Let the test lifecycle be managed by a tool instead of yourself
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="i fragment current-visible">
+                                Integration
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Integration:</b>
+                                            with IDEs (e.g. code completion) or arbitrary tools
+                                            (e.g. Grunt, Gulp)
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="j fragment current-visible">
+                                Watch Mode
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Watch Mode:</b>
+                                            Be able to rerun your test suite everytime you hit safe (not
+                                            that important)
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
+                            <span class="k fragment current-visible">
+                                Test Hooks
+                                <aside class="notes">
+                                    <ul>
+                                        <li><b>Test Hooks:</b>
+                                            Execute certain tasks when certain events appear (e.g. take
+                                            screenshot when test fails)
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </span>
                             <span class="fragment current-visible"></span>
                         </div>
-                        <aside class="notes">
-                            <ul>
-                                <li>Reporters:
-                                    You want to have nice spec or junit reports that actually
-                                    specify the capabilities and other meta information of the
-                                    test it is reporting</li>
-                                <li>Testrunner:
-                                    You want a tool that runs your tests in parallel for you
-                                    to speed up the test execution time</li>
-                                <li>Configuration Management:
-                                    This is about seperation of concerns: you want to have the
-                                    configuration aspects of your tests seperated from your test</li>
-                                <li>Assertion:
-                                    It is easier to identify errors with error messages and
-                                    snapshot comparisons as well as it makes the code more readable</li>
-                                <li>Extendability:
-                                    You wanna be able to extend your suite with plugins to solve
-                                    problems other people have already solved</li>
-                                <li>Debugging:
-                                    This is the most important feature of all. As easier it is
-                                    to debug your automated test as easier it is for you to build
-                                    stable test suites</li>
-                                <li>CLI:
-                                    A nice command line interface can not only help to set up
-                                    things quicker but also to easier run test suites on CI</li>
-                                <li>Setup & Teardown:
-                                    Let the test lifecycle be managed by a tool instead of yourself</li>
-                                <li>
-                                    Integration:
-                                    with IDEs (e.g. code completion) or arbitrary tools
-                                    (e.g. Grunt, Gulp)</li>
-                                <li>Watch Mode:
-                                    Be able to rerun your test suite everytime you hit safe (not
-                                    that important)</li>
-                                <li>Test Hooks:
-                                    Execute certain tasks when certain events appear (e.g. take
-                                    screenshot when test fails)</li>
-                            </ul>
-                        </aside>
                     </section>
                     <section
                         data-background-image="/images/cypress.png"
@@ -422,14 +500,17 @@
                         </aside>
                     </section>
                     <section>
-                        <div class="cypressway">
-                            <h1>WebDriver vs Cypress</h1>
-                            <ul class="diffwd">
+                        <div class="differences diffwd">
+                            <h1>WebDriver</h1>
+                            <ul>
                                 <li>One protocol to rule them all</li>
                                 <li>Highlevel access to browser functionality (open, click, get text)</li>
                                 <li>Usable with all programming languages</li>
                             </ul>
-                            <ul class="diffcy">
+                        </div>
+                        <div class="differences diffcy">
+                            <h1>Cypress.io</h1>
+                            <ul>
                                 <li>Limited to Chrome based browser (Firefox support in the making)</li>
                                 <li>In depth access to browser functionality (request mocks, DOM snapshots)</li>
                                 <li>Only support for Node.JS</li>
@@ -455,6 +536,14 @@
                 <section>
                     <section>
                         <img src="/images/webdriverio.svg" class="no-border" width="600">
+                        <aside class="notes">
+                            <ul>
+                                <li>Ok, enough talking about the theoretical stuff</li>
+                                <li>I hope you guys now have a better idea about what WebdriverIO is trying to achieve</li>
+                                <li>Do you guys remember the slide about what is important about an e2e test framework?</li>
+                                <li>If not this will fresh up your memory:</li>
+                            </ul>
+                        </aside>
                     </section>
                     <section>
                         <div class="testframeworkfeatures">

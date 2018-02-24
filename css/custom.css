@@ -50,7 +50,7 @@ body .reveal .controls,
 }
 
 .reveal div.intro.titleSlide:before {
-    background: #ea5906;
+    background: #d52f2b;
 }
 
 .reveal div.intro.easeIn:before {
@@ -462,11 +462,23 @@ body .reveal blockquote.seleniumis:after {
 .reveal .cypressway .arrowLabel {
     left: 21%;
 }
+.reveal .differences h1 {
+    margin-bottom: 60px;
+}
 .reveal .diffwd {
-    position: absolute; width: 40%; left: 10%; top: 30%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 45%;
+    display: inline-block;
 }
 .reveal .diffcy {
-    position: absolute; width: 40%; left: 56%; top: 30%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 45%;
+    display: inline-block;
+    margin-left: 5%;
 }
 
 .reveal .diffwd li,
